@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To do</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/9fa69d40a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo">
+      <div class="TODOheader">
+
+        <div class="top_icons">
+          <i class="fa fa-eraser" title="Clear Checked TODO" aria-hidden="true" onclick="clearCheckedTodo();"></i>
+          <i class="fa fa-history" title="History" aria-hidden="true" onclick="displayHistory();"></i>
+          <i title=" Delete All " class="fa fa-refresh" aria-hidden="true" onclick="deleteAllTodo();"></i>
+        </div>
+        <p id="dateP"></p>
+      </div>
+      <div class="todoHistory" id="todoHistory">
+        <i class="fa fa-window-close" aria-hidden="true" onclick="closeHistory();"></i>
+        <h2>History</h2>
+        <ul id="Hislist">
+        </ul>
+
+      </div>
+      <div class="TODOcontent" id="content">
+        <ul id="list">
+        </ul>
+      </div>
+
+
+      <div class="add_list">
+        <input id="input" type="text" value="" placeholder="Add a to-do" />
+        <i class="submitBtn" title="Add to the list" onclick="addtodoinlist()"></i>
+      </div>
+    </div>
+  </div>
+  <script defer src="app-min.js"></script>
+</body>
+
+</html>

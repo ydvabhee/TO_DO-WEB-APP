@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: auto;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: whitesmoke;
+  padding-top: 2em;
+}
+
+.todo {
+  width: 50em;
+  height: 36em;
+  /* border: 1px darkblue solid; */
+  /* background-color: white; */
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 5px gray;
+}
+
+li {
+  position: relative;
+  display: inline-flexbox;
+  background: #f2f2f2;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 1em;
+  padding: 5px;
+  text-align: left;
+}
+
+.trash_big {
+  position: absolute;
+  font-size: 18px;
+  right: 10px;
+  top: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.circle_big {
+  position: absolute;
+  font-size: 18px;
+  left: 10px;
+  top: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.todo_title {
+  /* position: absolute; */
+  font-size: 18px;
+  width: 12.5em;
+  min-height: 1em;
+  height: auto;
+  left: 2em;
+  top: 0em;
+  overflow: hidden;
+  margin-left: 2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* border: 1px solid; */
+}
+
+.line_through {
+  text-decoration-line: line-through;
+  font-feature-settings: "haln" on;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.TODOheader {
+  width: auto;
+  height: 10em;
+  overflow: hidden;
+  background-color: rgb(33, 58, 129);
+  background-size: cover;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.TODOheader p {
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+  bottom: 0;
+  position: absolute;
+  font-size: 22px;
+  padding: 10px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+}
+
+.TODOheader img {
+  z-index: 0;
+}
+
+.TODOheader .top_icons {
+  float: right;
+  //background-color: white;
+  margin: 20px 10px 0px 0px;
+  color: white;
+  font-size: 20px;
+  padding: 0px 30px;
+}
+
+.TODOheader .top_icons i {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.TODOheader .top_icons i:hover {
+  color: rgb(116, 163, 230);
+}
+
+.TODOcontent {
+  width: auto;
+  min-height: 22em;
+  height: 10em;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+.todoHistory {
+  width: auto;
+  max-height: 26em;
+  height: 26em;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  z-index: 1;
+  /* justify-content: center; */
+  display: none;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  transition: 1s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+.todoHistory i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.todoDate {
+  background-color: rgb(105, 103, 98);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0px 10px;
+}
+
+.todoHistory h2 {
+  margin: 10px 10px;
+}
+
+.add_list {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding: 10px;
+  color: rgb(79, 79, 92);
+  font-size: 18px;
+  border-top: 1px solid;
+  /* background-color: rgb(5, 5, 12); */
+}
+
+.add_list input[type="text"] {
+  outline: none;
+  padding: 10px 10px;
+  border-style: none;
+  min-width: 40em;
+  width: auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(69, 69, 177);
+  background-color: transparent;
+  margin-left: 5px;
+  font-family: "Comfortaa", cursive;
+}
+
+.submitBtn {
+  background-image: url("plus.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  z-index: 1;
+  color: rgb(94, 151, 94);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 199, 199);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.drop {
+ transform: translateY(8rem) rotateZ(90deg);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
